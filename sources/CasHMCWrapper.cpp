@@ -19,6 +19,8 @@ extern double memUtil;					//Frequency of requests - 0.0 = no requests, 1.0 = as
 extern double rwRatio;					//(%) The percentage of reads in request stream
 extern string traceFileName;			//Trace file name
 
+
+//GIT Test commit
 namespace CasHMC
 {
 	
@@ -62,7 +64,7 @@ CasHMCWrapper::CasHMCWrapper()
 		upstreamLinks[l]->linkSlaveP = hmcCont->upLinkSlaves[l];
 		hmcCont->upLinkSlaves[l]->upBufferDest = hmcCont;
 		hmcCont->upLinkSlaves[l]->localLinkMaster = hmcCont->downLinkMasters[l];
-	}
+    }
 
 	//Check CPU clock cycle and link speed
 	if(CPU_CLK_PERIOD < linkPeriod) {	//Check CPU clock cycle and link speed
